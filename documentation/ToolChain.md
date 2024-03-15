@@ -5,10 +5,12 @@
 * Penpot:
   * [https://design.penpot.app/]
   * Target features:
-* IDE:
-  * Visual Studio Code
-* Git bash
-  
+* Visual Studio Code
+  * [https://code.visualstudio.com/]
+* Git:
+  * bash [https://git-scm.com/downloads]
+  * Github Desktop [https://desktop.github.com/]
+
 ### Tools to look into
 
 * Figma
@@ -20,3 +22,10 @@
   * [https://ngrok.com/]
 * Netlify
   * [https://netlify.app/]
+
+## Components
+
+* Bootstrap
+* Javascript
+* CSS 3
+* HTML 5
