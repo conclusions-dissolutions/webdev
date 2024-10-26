@@ -4,55 +4,465 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <!-- font awosome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Conclusions Dissolutions</title>
+    <link rel="icon" href="assets/images/Logo-mobile-02.png">
+
+    <!-- Google fonts START  -->
+    <!-- Bebas Neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Google fonts END  -->
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- swiper slider  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"> -->
+
+    <!-- bootstrap css  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+     <!-- AOS CSS  -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- stylesheet  -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
-
-    <section>
-        <div class="wrapper">
-            <div class="flex-box">
-                <div class="content-wrapper">
-                    <div class="your-logo"><img src="assets/images/logo-no-background.png" alt="logo"></div>
-                    <div class="counter">
-                        <div class="timer-div days"><span class="number">000</span><span class="timer-text">Days</span>
-                        </div>
-                        <div class="timer-div hours"><span class="number">00</span><span class="timer-text">Hours</span>
-                        </div>
-                        <div class="timer-div minutes"><span class="number">00</span><span
-                                class="timer-text">Minutes</span>
-                        </div>
-                        <div class="timer-div seconds"><span class="number">00</span><span
-                                class="timer-text">Seconds</span>
-                        </div>
-                    </div>
-                    <div class="comingSoon-text">
-                        <p>Our team has been working on something amazing.<br> Coming soon. </p>
-                    </div>
-                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeOeDqxaoS6QZAZFhPRQFIHosTBjiXvP7IQ1ERDJR8SzIGz3Q/formResponse">
-                    <!-- <form action=""> -->
-                        <div class="form-innerDiv">
-                            <input type="email"  name="entry.1242865233" placeholder="Join Mailing List" class="input-email">
-                            <!-- <span>Entry</span> -->
-                            <input type="submit" value="Submit" class="input-submit">
-                        </div>
-                    </form>
-                    
-                    <div class="connect">
-                        <a href="#"><span class="icon"><i class="fa-brands fa-github"></i></span></a>
-                        <a href="#"><span class="icon"><i class="fa-brands fa-discord"></i></span></a>
+    <header class="header">
+        <div class="logo nav_logo mobile_logo lg_none sm_block">
+            <a href="javascript:;" class="logo_holder">
+                <img src="assets/images/logo-final.png" alt="">
+            </a>
+        </div>
+        <nav class="nav_wrap">
+            <ul class="nav_ul">
+                <li class="nav_buttons">
+                    <a href="#home">
+                        <span class="nav_text_wrapper">
+                            <span class="nav_span_text">Home</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav_buttons">
+                    <a href="#about">
+                        <span class="nav_text_wrapper">
+                            <span class="nav_span_text">About</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav_buttons nav_logo nav_logo_desktop sm_none"><a href="javascript:;"><img
+                            src="assets/images/logo-01.png" alt=""></a></li>
+                <li class="nav_buttons">
+                    <a href="#our_games">
+                        <span class="nav_text_wrapper">
+                            <span class="nav_span_text">Games</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav_buttons">
+                    <a href="#contact_us">
+                        <span class="nav_text_wrapper">
+                            <span class="nav_span_text">Contact Us</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav_buttons lg_none sm_block">
+                    <ul class="footer_logos_wrap">
+                        <li>
+                            <a href="https://www.linkedin.com/company/conclusions-dissolutions/" target="_blank"><span class="footer_icon"><i class="fa-brands fa-linkedin"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/conclusions-dissolutions" target="_blank"><span class="footer_icon"><i class="fa-brands fa-github"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="https://conclusionsdissolutions.itch.io/" target="_blank"><span class="footer_icon"><i class="fa-brands fa-itch-io"></i></span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="dev_by dev_by_mobile lg_none ">Developed by <a target="_blank" href="https://lets-talk-landing-form.netlify.app/?via=CDwebsite&ab=akainu">Akainu 
+                <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </nav>
+        <div class="nav_bg lg_none sm_block"></div>
+        <button class="nav_toggle_button lg_none sm_block">
+            <div class="button_icon_wrap">
+                <span class="icon_dash"></span>
+                <span class="icon_dash"></span>
+                <span class="icon_dash"></span>
+            </div>
+        </button>
+    </header>
+        <section class="section_wrap " id="home">
+            <div class=" home-section inner_section_main">
+                <!-- <div class="home_section_vid_wrap"> -->
+                    <video autoplay loop muted class="home_section_vid sm_none">
+                        <source src="assets/images/banner-vid-01.mp4" type="video/mp4">
+                    </video>
+                    <video autoplay loop muted class="home_section_vid lg_none sm_block">
+                        <source src="assets/images/mobile-banner-vid-01.mp4" type="video/mp4">
+                    </video>
+                <!-- </div> -->
+                <div class="section-container " >
+                    <div class="home_inner_wrap">
+                        <h1 class="main_title">
+                            <span data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" style="display: inline-block;">FROM THE ASHES, COMES SOME NEW INDIE DEVELOPERS.</span>
+                            <span data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" style="display: inline-block;">TO MAKE GAMES WE WANT TO PLAY.<br>
+                            BASED ON THE GAMES WE GREW TO LOVE.</span>
+                        </h1>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="section_wrap aboutUs_section_main min_height_100" >
+            <div class="spaceer" id="about" style="min-height: 37px;"></div>
+            <div class="about_section">
+                <h2 class="section_title" data-aos="fade-up" data-aos-duration="700" data-aos-offset="200">About Us</h2>
+                <div class="container-fluid">
+                    <div class="row sm_column_rev row-gap-5">
+                        <div class="col-md-8">
+                            <div class="about_content_wrap" data-aos="fade-up" data-aos-duration="700" >
+                                <p>
+                                    Welcome to our world of innovation and imagination! At Conclusions Dissolutions, we are passionate game developers dedicated to crafting captivating experiences that resonate with players around the globe.
+                                </p>
+                                <p>
+                                    Founded on the belief that every pixel counts, our team of skilled creators brings together a blend of talent, creativity, and technical expertise. From gripping narratives to immersive gameplay mechanics, we strive to push the boundaries of what's possible in gaming.
+                                </p>
+                                <p>
+                                    But it's not just about the games; it's about the community. We cherish the bond we share with our players and value their feedback as we continuously evolve and improve our titles. Together, we embark on unforgettable adventures, forging connections that transcend the digital realm.
+                                </p>
+                                <p>
+                                    Whether you're a seasoned gamer or just starting your journey, we invite you to join us as we explore new worlds, conquer epic challenges, and create memories that last a lifetime.
+                                </p>
+                                <p>
+                                    Thank you for being part of our story.
+                                </p>
+                                <p>
+                                    Conclusions Dissolutions - Where Every Game Tells a Tale.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img_wrap about_img_wrap" data-aos="fade-up" data-aos-duration="700">
+                                <img src="assets/images/about-img.png" alt="About Us">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_wrap our_team" id="our_team">
+            <div class="ourTeam_section" id="ourTeam_section_id">
+                <h2 class="section_title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">Our Team</h2>
+                <div class="cards_horizontal_holder" data-aos="fade-left">
+                    <div class="our_team_card_wrap"  >
+
+                        <div class="ourteam_single_card">
+                            <div class="member_img_wrap img_wrap">
+                                <img src="assets/images/bastien-auxer-profile.jpg" alt="">
+                            </div>
+                            <div class="member_content">
+                                <div class="member_desig_name_wrap">
+                                    <div class="member_desig"><span>Lead Game Developer</span></div>
+                                    <div class="member_name">Bastien</div>
+                                </div>
+                                <div class="member_icons_wrap">
+                                    <div class="card_icons_warp">
+                                        <a href="https://www.linkedin.com/in/bastien-auxer-09a9a485/" target="_blank" class="single_icon"><i class="fa-brands fa-linkedin"></i></a>
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-x-twitter"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-behance"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-instagram"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ourteam_single_card">
+                            <div class="member_img_wrap img_wrap">
+                                <img src="assets/images/tenise-profile.jpeg" alt="">
+                            </div>
+                            <div class="member_content">
+                                <div class="member_desig_name_wrap">
+                                    <div class="member_desig"><span>Game Artist</span></div>
+                                    <div class="member_name">Tenise</div>
+                                </div>
+                                <div class="member_icons_wrap">
+                                    <div class="card_icons_warp">
+                                        <a href="https://www.linkedin.com/in/kayla-tenise-brooks-90b6b2158/" target="_blank" class="single_icon"><i class="fa-brands fa-linkedin"></i></a>
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-x-twitter"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-behance"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-instagram"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ourteam_single_card">
+                            <div class="member_img_wrap img_wrap">
+                                <img src="assets/images/cep-profile.png" alt="">
+                            </div>
+                            <div class="member_content">
+                                <div class="member_desig_name_wrap">
+                                    <div class="member_desig"><span>Developer</span></div>
+                                    <div class="member_name">Cep</div>
+                                </div>
+                                <div class="member_icons_wrap">
+                                    <div class="card_icons_warp">
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-linkedin"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-x-twitter"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-behance"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"s><i class="fa-brands fa-instagram"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ourteam_single_card">
+                            <div class="member_img_wrap img_wrap">
+                                <img src="assets/images/connor-profile.jpg" alt="">
+                            </div>
+                            <div class="member_content">
+                                <div class="member_desig_name_wrap">
+                                    <div class="member_desig"><span>Game Designer</span></div>
+                                    <div class="member_name">Connor</div>
+                                </div>
+                                <div class="member_icons_wrap">
+                                    <div class="card_icons_warp">
+                                        <a href="https://www.linkedin.com/in/connor-sarnecky-70985920a/" target="_blank" class="single_icon"><i class="fa-brands fa-linkedin"></i></a>
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-x-twitter"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-behance"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-instagram"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ourteam_single_card">
+                            <div class="member_img_wrap img_wrap dummy_img">
+                                <img src="assets/images/paul-profile-02.jpg" alt="">
+                            </div>
+                            <div class="member_content">
+                                <div class="member_desig_name_wrap">
+                                    <div class="member_desig"><span>Web Developer</span></div>
+                                    <div class="member_name">Paul</div>
+                                </div>
+                                <div class="member_icons_wrap">
+                                    <div class="card_icons_warp">
+                                        <a href="https://www.linkedin.com/in/paul-baretto/" target="_blank" class="single_icon"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="https://x.com/paulbaretto" target="_blank" class="single_icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-behance"></i></a> -->
+                                        <a href="https://www.instagram.com/paulbarretto.dev/" target="_blank" class="single_icon"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ourteam_single_card">
+                            <div class="member_img_wrap img_wrap dummy_img">
+                                <img src="assets/images/dummy-profile.jpg" alt="">
+                            </div>
+                            <div class="member_content">
+                                <div class="member_desig_name_wrap">
+                                    <div class="member_desig"><span>Game Programmer</span></div>
+                                    <div class="member_name">Danieyll</div>
+                                </div>
+                                <div class="member_icons_wrap">
+                                    <div class="card_icons_warp">
+                                        <a href="https://www.linkedin.com/in/danieyll-wilson/" target="_blank" class="single_icon"><i class="fa-brands fa-linkedin"></i></a>
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-x-twitter"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-behance"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-instagram"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ourteam_single_card">
+                            <div class="member_img_wrap img_wrap dummy_img">
+                                <img src="assets/images/dummy-profile.jpg" alt="">
+                            </div>
+                            <div class="member_content">
+                                <div class="member_desig_name_wrap">
+                                    <div class="member_desig"><span>Developer</span></div>
+                                    <div class="member_name">Loukas</div>
+                                </div>
+                                <div class="member_icons_wrap">
+                                    <div class="card_icons_warp">
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-linkedin"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-x-twitter"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-behance"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-instagram"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ourteam_single_card">
+                            <div class="member_img_wrap img_wrap dummy_img">
+                                <img src="assets/images/dummy-profile.jpg" alt="">
+                            </div>
+                            <div class="member_content">
+                                <div class="member_desig_name_wrap">
+                                    <div class="member_desig"><span>Developer</span></div>
+                                    <div class="member_name">Sam</div>
+                                </div>
+                                <div class="member_icons_wrap">
+                                    <div class="card_icons_warp">
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-linkedin"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-x-twitter"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-behance"></i></a> -->
+                                        <!-- <a href="#" target="_blank" class="single_icon"><i class="fa-brands fa-instagram"></i></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_wrap min_height_100 ourGames_section" >
+            <div class="spaceer" id="our_games" style="min-height: 37px;"></div>
+            <div class="ourGames" id="ourGames_id">
+                <h2 class="section_title">Our Games</h2>
+                <div class="cards_horizontal_holder">
+                    <div class="our_games_card_wrap justify-content-center">
+                        <div class="games_single_card">
+                            <div class="games_img_holder img_wrap dummy_game">
+                                <img src="assets/images/shardew-valley.png" alt="Our Games">
+                            </div>
+                            <div class="game_desc_wrap">
+                                <div class="game_name">Stardew Valley</div>
+                                <div class="game_desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit Distinctio rerum dicta.
+                                </div>
+                                <div class="game_available_wrap">
+                                    <a href="#" class="play_in_browser">Play in Browser</a>
+                                    <a href="#" class="game_available_icon"><i class="fa-brands fa-windows"></i></a>
+                                    <a href="#" class="game_available_icon"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" class="game_available_icon"><i class="fa-brands fa-linux"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="games_single_card">
+                            <div class="games_img_holder img_wrap">
+                                <img src="assets/images/twisting-fate-img.png" alt="Our Games">
+                            </div>
+                            <div class="game_desc_wrap">
+                                <div class="game_name">Twisting Fate</div>
+                                <div class="game_desc">
+                                    Your the last of humanity, and you will be it's judge.
+                                </div>
+                                <div class="game_available_wrap">
+                                    <a href="https://conclusionsdissolutions.itch.io/twisting-fate" target="_blank" class="play_in_browser">Play in Browser</a>
+                                    <!-- <a href="#" class="game_available_icon"><i class="fa-brands fa-windows"></i></a> -->
+                                    <!-- <a href="#" class="game_available_icon"><i class="fa-brands fa-apple"></i></a> -->
+                                    <!-- <a href="#" class="game_available_icon"><i class="fa-brands fa-linux"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="games_single_card">
+                            <div class="games_img_holder img_wrap dummy_game">
+                                <img src="assets/images/shardew-valley.png" alt="Our Games">
+                            </div>
+                            <div class="game_desc_wrap">
+                                <div class="game_name">Stardew Valley</div>
+                                <div class="game_desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit Distinctio rerum dicta.
+                                </div>
+                                <div class="game_available_wrap">
+                                    <a href="#" class="play_in_browser">Play in Browser</a>
+                                    <a href="#" class="game_available_icon"><i class="fa-brands fa-windows"></i></a>
+                                    <a href="#" class="game_available_icon"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" class="game_available_icon"><i class="fa-brands fa-linux"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_wrap min_height_95 contact_form_section" >
+            <div class="spaceer" id="contact_us" style="min-height: 37px;"></div>
+            <div class=" contact_us">
+                <h2 class="section_title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">Contact Us</h2>
+                <div class="contact_wrapper">
+                    <form id="form" autocomplete="off" method="POST">
+                        <input type="hidden" name="access_key" class="access_key_here" value="003b9e05-3c55-4cc6-a472-dd1b4c746401">
+                        <input type="text" name="On Website Via" hidden class="submitted_via">
+                        <div class="form_inner_wrap">
+                            <div class="input_group">
+                                <div class="input_wrap">
+                                    <input type="text" name="First Name" placeholder="First Name" autocomplete="off" required>
+                                </div>
+                                <div class="input_wrap">
+                                    <input type="text" name="Last Naem" placeholder="Last Name" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="input_wrap">
+                                <input type="email" name="Email" placeholder="Email" autocomplete="off" required>
+                            </div>
+                            <div class="input_wrap">
+                                <textarea name="Message" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="submit_buttton"><input type="submit" value="Submit" class="submit_button"></div>
+                        </div>
+                    </form>
+                </div>
+                <div id="result" class="result_wrap"><p>Form submitted successfully</p></div>
+            </div>
+        </section>
+
+
+    <div class="page_footer ">
+        <div class="dev_by sm_none">Developed by <a target="_blank" href="https://lets-talk-landing-form.netlify.app/?via=CDwebsite&ab=akainu">Akainu 
+        <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <div class="footer_copyriight_wrap"><span class="copyright_sign">&#169;</span> <span class="year"></span> Conclusion's Dissolutions</div>
+        <div class="footer_logos_wrapper sm_none">
+            <ul class="footer_logos_wrap">
+                <li>
+                    <a href="https://www.linkedin.com/company/conclusions-dissolutions" target="_blank"><span class="footer_icon"><i class="fa-brands fa-linkedin"></i></span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/conclusions-dissolutions" target="_blank"><span class="footer_icon"><i class="fa-brands fa-github"></i></span></a>
+                </li>
+                <li>
+                    <a href="https://conclusionsdissolutions.itch.io/" target="_blank"><span class="footer_icon"><i class="fa-brands fa-itch-io"></i></span></a>
+                </li>
+            </ul>
         </div>
-    </section>
+    </div>
+    <footer>
+        <!-- Jquery  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- swiper js  -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script> -->
+        <!-- Gsap js  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        
+        <!-- bootstrap js  -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
 
+          <!-- AOS JS  -->
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+        <!-- main js  -->
+        <script src="assets/js/main.js" type="module"></script>
+        <script src="assets/js/functions.js" type="module"></script>
 
-    <script src="assets/js/main.js"></script>
+    </footer>
 </body>
-
 </html>
+
+
+<!--
+swipper js docs 
+https://swiperjs.com/types/interfaces/types_swiper_options.SwiperOptions
+https://codepen.io/humming-design/pen/ExeKeMj
+
+
+-->

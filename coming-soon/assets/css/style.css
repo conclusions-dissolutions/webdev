@@ -1,0 +1,200 @@
+
+
+
+body {
+    margin: 0;
+    background: #000;
+}
+
+section {
+    /* background: url('https://i.imgur.com/xq9SKxY.jpg'); */
+    background: url('../images/2205_w037_n003_369b_p1_369.jpg');
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1;
+    filter: opacity(.7);
+}
+
+
+.wrapper {
+    margin-inline: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.flex-box {
+    display: grid;
+    justify-content: flex-end;
+    min-height: 90vh;
+    align-items: center;
+}
+
+.your-logo {
+    max-width: 230px;
+    margin-left: auto;
+    padding-right: 25px;
+}
+
+.your-logo img {
+    width: 100%;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.timer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 135px;
+    height: auto;
+    font-family: inherit;
+    border-block: 1px solid #ffffff40;
+    border-inline: 3px solid #ffffff40;
+}
+
+.number {
+    font-size: 50px;
+}
+
+.timer-text {
+    font-size: 25px;
+}
+
+.comingSoon-text {
+    font-size: 20px;
+    font-family: inherit;
+    text-align: end;
+}
+
+.form-innerDiv {
+    display: flex;
+    justify-content: end;
+    min-width: 200px;
+    min-height: 40px;
+}
+
+.form-innerDiv input[type="email"] {
+    min-width: 240px;
+    padding-left: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+}
+
+.form-innerDiv input[type="submit"] {
+    min-width: 100px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.form-innerDiv input[type="submit"]:hover {
+    background: #fff;
+    color: #000;
+}
+
+.form-innerDiv input::placeholder {
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.input-email:invalid+ .input-submit{
+        pointer-events: none;
+        /* opacity: 0.5; */
+        /* color: rgb(255, 0, 0); */
+}
+
+.connect{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.connect a {
+    display: block;
+}
+.connect a span i{
+    font-size: 30px;
+    color: #fff;
+}
+
+/* media  */
+
+@media (min-width:481px) and (max-width:900px) {
+    .timer-div {
+        min-width: 100px;
+    }
+
+    .number {
+        font-size: 30px;
+    }
+
+    .timer-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:600px) {
+    .wrapper {
+        padding-inline: 6px;
+    }
+    .content-wrapper{
+        align-items: center;
+    }
+    .counter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* flex-direction: column; */
+        row-gap: 40px;
+        column-gap: 30px;
+    }
+    .your-logo{
+        max-width: 90%;
+        margin-inline: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .timer-div {
+        min-width: 95px;
+        border: transparent;
+    }
+
+    .number {
+        font-size: 30px;
+    }
+
+    .timer-text {
+        font-size: 18px;
+    }
+    .comingSoon-text{
+        text-align: center;
+    }
+}
