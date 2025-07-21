@@ -1,0 +1,148 @@
+
+/* Tab media  */
+@media only screen and (max-width:1025px) and (min-width:600px){
+    /* Global css START  */
+    .main_title{
+        font-size:2.5rem;
+      }
+    /* Global css END */
+
+    /* home section START  */
+    .home_inner_wrap{
+        max-width: 100%;
+    }
+    /* home section END */
+}
+
+
+/* Mobile css  */
+@media only screen and (max-width:600px){
+/* Global css START  */
+.sm_none{
+    display: none;
+}
+.sm_block{
+    display: block;
+}
+.main_title{
+    font-size:1.5rem;
+}
+.sm_column_rev{
+    flex-direction: column-reverse;
+}
+.row{
+    row-gap: 15px;
+}
+section{
+    overflow-x: hidden;
+}
+/* Global css END */
+
+/* header css start  */
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_holder{
+    display: block;
+    max-width: 200px;
+    height: 100%;
+    margin-inline: auto;
+    padding-top: 5px;
+}
+.logo_holder img{
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+.nav_wrap{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+}
+.nav_ul{
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+}
+.nav_bg{
+    position: fixed;
+    content: '';
+    top: -10px;
+    right: -10px;
+    background-color: #000000e6;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    transition: 0.5s linear;
+    z-index: 3;
+}
+.nav_active .nav_bg{
+    transform: scale(100);
+}
+.nav_active .nav_wrap{
+    opacity: 1;
+    visibility: visible;
+}
+.dev_by.dev_by_mobile{
+    display: block;
+    top: auto;
+    bottom: 10px;
+    left: auto;
+    right: 15px;
+}
+/* header css end */
+
+/* Home section START  */
+.home_inner_wrap{
+    max-width: 100%;
+}
+/* Home section END */
+
+/* our Team START  */
+.our_team{
+    background-position: left;
+}
+.gsap_working .our_team_card_wrap{
+    margin-left: 20px;
+    margin-right: 35px;
+}
+
+/* our Team END */
+
+/* our games START  */
+.gsap_working .our_games_card_wrap{
+    margin-left: 150px;
+    margin-right: 100px;
+  }
+/* our games END */
+
+/* contact form START  */
+.result_wrap.submitting,
+.result_wrap.submitted{
+  transform: translateY(-45px);
+}
+/* contact form END */
+
+/* footer css START  */
+.footer_copyriight_wrap{
+    position: relative;
+    z-index: 4;
+}
+/* footer css END */
+
+} 
+/* END MOBILE MEDIA QUERY */
